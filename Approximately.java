@@ -8,20 +8,22 @@ class Approximately {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         int k;
-        int temp;
+        int temp,truncate,ans;
+        truncate = 33102;
+        ans = 3;
         for (int i = 0; i < t; i++) {
             int remainder = 4687;
             k = sc.nextInt();
             int a[] = new int[k];
             if (k == 0) {
-                System.out.println(3);
+                System.out.println(ans);
               }
             else {
                 int j = 0;
                 while (j < k) {
                     remainder *= 10;
-                    a[j] = remainder / 33102;
-                    remainder = remainder % 33102;
+                    a[j] = remainder / truncate;
+                    remainder = remainder % truncate;
                     j++;
                 }
                 System.out.print("3.");
@@ -30,7 +32,7 @@ class Approximately {
                   }
                 System.out.println();
             }
-        }
+        
     }
 }
 
