@@ -1,3 +1,6 @@
+//program link --> https://www.codechef.com/problems/APPROX
+//solution below
+
 import java.util.*;
 class Approximately {
     public static void main(String args[]) {
