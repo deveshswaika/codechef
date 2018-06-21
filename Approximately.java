@@ -1,7 +1,8 @@
-//program link --> https://www.codechef.com/problems/APPROX
-//solution below
+// program link --> https://www.codechef.com/problems/APPROX
+// solution below
 
 import java.util.*;
+
 class Approximately {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
@@ -12,8 +13,9 @@ class Approximately {
             int remainder = 4687;
             k = sc.nextInt();
             int a[] = new int[k];
-            if (k == 0)
+            if (k == 0) {
                 System.out.println(3);
+              }
             else {
                 int j = 0;
                 while (j < k) {
@@ -23,10 +25,14 @@ class Approximately {
                     j++;
                 }
                 System.out.print("3.");
-                for (int x = 0; x < k; x++)
+                for (int x = 0; x < k; x++) {
                     System.out.print(a[x]);
+                  }
                 System.out.println();
             }
         }
     }
 }
+
+
+
