@@ -8,7 +8,7 @@ class Approximately {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         int k;
-        int temp,truncate,ans;
+        int temp, truncate, ans;
         truncate = 33102;
         ans = 3;
         for (int i = 0; i < t; i++) {
@@ -32,9 +32,7 @@ class Approximately {
                   }
                 System.out.println();
             }
-        
+        }
     }
 }
-
-
 
