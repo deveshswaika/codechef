@@ -17,7 +17,7 @@ class Approximately {
             int a[] = new int[k];
             if (k == 0) {
                 System.out.println(ans);
-              }
+            }
             else {
                 int j = 0;
                 while (j < k) {
@@ -29,7 +29,7 @@ class Approximately {
                 System.out.print("3.");
                 for (int x = 0; x < k; x++) {
                     System.out.print(a[x]);
-                  }
+                }
                 System.out.println();
             }
         }
