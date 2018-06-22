@@ -8,7 +8,7 @@ class Approximately {
         Scanner sc = new Scanner(System.in);
         int num_test_cases = sc.nextInt();
         int num_decimal_digits;
-        int temp, int_part, NUMERATOR, DENOMINATOR;
+        int int_part, NUMERATOR, DENOMINATOR;
         NUMERATOR = 103993;
         DENOMINATOR = 33102;
         int_part = NUMERATOR / DENOMINATOR;
