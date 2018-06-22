@@ -7,14 +7,12 @@ class Approximately {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int num_test_cases = sc.nextInt();
-        int num_decimal_digits;
-        int int_part, NUMERATOR, DENOMINATOR;
-        NUMERATOR = 103993;
-        DENOMINATOR = 33102;
-        int_part = NUMERATOR / DENOMINATOR;
+        int NUMERATOR = 103993;
+        int DENOMINATOR = 33102;
+        int int_part = NUMERATOR / DENOMINATOR;
         for (int i = 0; i < num_test_cases; i++) {
             int remainder = NUMERATOR % DENOMINATOR;
-            num_decimal_digits = sc.nextInt();
+            int num_decimal_digits = sc.nextInt();
             int digits[] = new int[num_decimal_digits];
             if (num_decimal_digits == 0) {
                 System.out.println(int_part);
