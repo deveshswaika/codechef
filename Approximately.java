@@ -8,11 +8,13 @@ class Approximately {
         Scanner sc = new Scanner(System.in);
         int num_test_cases = sc.nextInt();
         int num_decimal_digits;
-        int temp, truncate, num_int_part;
+        int temp, truncate, num_int_part, NUMERATOR, DENOMINATOR;
         truncate = 33102;
+        NUMERATOR = 103993;
+        DENOMINATOR = 33102;
         num_int_part = 3;
         for (int i = 0; i < num_test_cases; i++) {
-            int remainder = 4687;
+            int remainder = NUMERATOR % DENOMINATOR;
             num_decimal_digits = sc.nextInt();
             int digits[] = new int[num_decimal_digits];
             if (num_decimal_digits == 0) {
