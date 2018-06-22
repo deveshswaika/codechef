@@ -11,7 +11,7 @@ class Approximately {
         int temp, int_part, NUMERATOR, DENOMINATOR;
         NUMERATOR = 103993;
         DENOMINATOR = 33102;
-        int_part = NUMERATOR/DENOMINATOR;
+        int_part = NUMERATOR / DENOMINATOR;
         for (int i = 0; i < num_test_cases; i++) {
             int remainder = NUMERATOR % DENOMINATOR;
             num_decimal_digits = sc.nextInt();
@@ -27,7 +27,7 @@ class Approximately {
                     remainder = remainder % DENOMINATOR;
                     j++;
                 }
-                System.out.print(String.valueOf(int_part)+".");
+                System.out.print(String.valueOf(int_part) + ".");
                 for (int x = 0; x < num_decimal_digits; x++) {
                     System.out.print(digits[x]);
                 }
