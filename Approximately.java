@@ -12,13 +12,13 @@ class Approximately {
         int int_part = NUMERATOR / DENOMINATOR;
         for (int i = 0; i < num_test_cases; i++) {
             int num_decimal_digits = sc.nextInt();           
-            String fraction = calculate_fraction(NUMERATOR , DENOMINATOR , num_decimal_digits);
+            String fraction = calculate_fraction(NUMERATOR, DENOMINATOR, num_decimal_digits);
             System.out.println(fraction);
         }
     }
     
-    public static String calculate_fraction(int numerator , int denominator , int num_decimal_digits) {
-        if(num_decimal_digits == 0) {
+    public static String calculate_fraction(int numerator, int denominator, int num_decimal_digits) {
+        if (num_decimal_digits == 0) {
             return String.valueOf(numerator / denominator);
         }
         else {
@@ -39,5 +39,4 @@ class Approximately {
         }
     }
 }
-
 
